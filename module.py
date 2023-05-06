@@ -53,15 +53,5 @@ def extract_checkboxes(file_path):
     return checkboxes
 
 
-def read_docx_table(document,table_num=1,nheader=1):
-  table = document.tables[table_num-1]
-  data = [[cell.text for cell in row.cells] for row in table.rows]
-  df = pd.DataFrame(data)
-  if nheader ==1:
-    df = df.rename(columns=df.iloc[0]).drop(df.index[0]).reset_index(drop=True)
-  if nheader ==2:
-    outside_col, inside_col = df.iloc[0], df.iloc[1]
-    hier_index = pd.MultiIndex.from_tuples(list(zip(outside_col, inside_col)))
-    df = pd.DataFrame(data,columns=hier_index).drop(df.index[[0,1]] ).reset_index(drop=True)
-  return df
+
 
