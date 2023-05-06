@@ -12,3 +12,5 @@ Here is an example of the output of the code I screenshoted and corresponding pa
 
 ![output](https://user-images.githubusercontent.com/128442592/236622976-bf534bd3-f614-474c-b573-7a7dbee6f2df.png)
 
+
+Just to note that it might have some spelling errors which is due to the pretrained model used.
