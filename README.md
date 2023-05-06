@@ -1,0 +1,1 @@
+# Extracting-verified-checkboxes-in-a-pdf-file-by-pytesseract-OCR
